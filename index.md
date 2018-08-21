@@ -1,3 +1,3 @@
-## Welcome to ChoF's GitHub Page
+## Welcome to ChoF's Archive
 
-### [About Me](aboutme.html)
+### [About ChoF](aboutme.html)
