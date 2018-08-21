@@ -1,10 +1,3 @@
----
-layout: page
-title: About me
-subtitle: Jin-Hwan CHO &nbsp;&bullet;&nbsp; 조진환&nbsp;&bullet;&nbsp; 趙珍煥
-permalink: /aboutme/
----
-
 <a href="https://stackexchange.com/users/12595906/chof"><img src="https://stackexchange.com/users/flair/12595906.png" width="208" height="58" alt="profile for ChoF on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for ChoF on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
 
 My current position is
@@ -40,7 +33,7 @@ I'm working on **Mathematics for Industry** at ICIM.
      The history of this integration and reorganization indicates that this basic idea will someday find increasing utility.
      Mathematics can be a key technology in modern society.
 
-- Recent contribution to a newspaper --- “[그곳에 가면 산업수학 모더레이터가 있다](https://www.icim.or.kr/press/2016/07/22/joongdoilbo-science-review.html)”
+- Recent contribution to a newspaper --- “[그곳에 가면 산업수학 모더레이터가 있다](http://www.joongdo.co.kr/main/view.php?key=201607211177)”
 
 I have the following qualities:
 
