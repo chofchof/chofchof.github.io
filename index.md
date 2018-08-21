@@ -1,4 +1,4 @@
-### [About ChoF](aboutme.html)
+### [About ChoF](/aboutme/)
 
 ### Self Studies
 
