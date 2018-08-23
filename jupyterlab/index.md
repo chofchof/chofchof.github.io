@@ -9,7 +9,9 @@
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
-## Links
+  - [Examples](https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/examples/Index.ipynb)
+  
+## Documents
 
   - [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/)
   - [Jupyter Widgets](https://ipywidgets.readthedocs.io/)
