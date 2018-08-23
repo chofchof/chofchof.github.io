@@ -1,3 +1,8 @@
+---
+layout: post
+title: ChoF's Archive
+---
+
 # About
 
 - [About me](/aboutme/)
