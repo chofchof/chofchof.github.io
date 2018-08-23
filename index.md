@@ -1,5 +1,4 @@
 ---
-layout: post
 title: ChoF's Archive
 ---
 
