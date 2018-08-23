@@ -2,7 +2,9 @@
 
 ## JupyterLab Extensions
 
-### Node.js
+  - [List of JupyterLab Extensions](https://github.com/topics/jupyterlab-extension)
+
+### JupyterLab requires [Node.js](https://nodejs.org)
 
 ```
 conda install nodejs
