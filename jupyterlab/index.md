@@ -1,5 +1,9 @@
 # JupyterLab
 
+```bash
+conda install jupyterlab
+```
+
 ## JupyterLab Extensions
 
   - [List of JupyterLab Extensions](https://github.com/topics/jupyterlab-extension)
