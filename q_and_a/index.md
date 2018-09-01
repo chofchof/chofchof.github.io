@@ -14,8 +14,7 @@
   >
   > We can use masked arrays for this:
   >
-       x = array([[1,0], [2,3]])
-       log_x = np.ma.log(x).filled(0)
+  >     log_x = np.ma.log(x).filled(0)
 
 ## [matplotlib](https://stackoverflow.com/questions/tagged/matplotlib)
 
