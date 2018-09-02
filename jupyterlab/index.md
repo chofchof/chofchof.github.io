@@ -6,6 +6,10 @@ conda install jupyterlab
 
 ## [JupyterLab Extensions](extensions)
 
+  - [List of JupyterLab Extensions](https://github.com/topics/jupyterlab-extension)
+  - [ipywidgets](extensions#ipywidgets)
+  - [JupyterLab LaTeX](extensions@jupyterlab-latex)
+  
 ## Issues
 
   - Some HTML tags working in Jupyter Notebook do not work in JupyterLab.
