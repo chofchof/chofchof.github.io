@@ -1,12 +1,11 @@
 # JupyterLab Extensions
 
-  - [List of JupyterLab Extensions](https://github.com/topics/jupyterlab-extension)
-
-## JupyterLab extensions require [Node.js](https://nodejs.org)
-
+  - JupyterLab extensions require [Node.js](https://nodejs.org)
 ```bash
 conda install nodejs
 ```
+
+  - [List of JupyterLab Extensions](https://github.com/topics/jupyterlab-extension)
 
 ## ipywidgets
 
