@@ -1,10 +1,10 @@
 # JupyterLab
 
 ```bash
-conda install jupyterlab
+conda install jupyterlab nodejs
 ```
 
-## [JupyterLab Extensions](extensions)
+## JupyterLab Extensions
 
   - [List of JupyterLab Extensions](https://github.com/topics/jupyterlab-extension)
   - [ipywidgets](extensions#ipywidgets)
