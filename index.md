@@ -9,10 +9,15 @@ title: ChoF's Archive
 
 # Development Notes
 
-- [JupyterLab](/jupyterlab/)
-- [Stack Overflow](/q_and_a/stack_overflow)
-- [Stack Exchange](/q_and_a/stack_exchange)
+- [JupyterLab](/devel/jupyterlab)
 
+- [Stack Overflow](/devel/stack_overflow)
+  * [numpy](/devel/stack_overflow#numpy)
+  * [matplotlib](/devel/stack_overflow#matplotlib)
+
+- [Stack Exchange](/devel/stack_exchange)
+  * [Unix & Linux Stack Exchange](/devel/stack_exchange#unix--linux-stack-exchange)
+  
 # Self Studies
 
 1. [Seminar Notes](https://github.com/chofchof/reinforcement-learning-an-introduction) for [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) by Sutton and Barto
