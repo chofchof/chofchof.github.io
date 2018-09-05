@@ -5,7 +5,15 @@
 conda install nodejs
 ```
 
+  - Update JupyterLab extensions
+```bash
+jupyter labextension update --all
+```
+
   - [List of JupyterLab Extensions](https://github.com/topics/jupyterlab-extension)
+```bash
+jupyter labextension list
+```
 
 ## ipywidgets
 
