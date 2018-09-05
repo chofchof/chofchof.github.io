@@ -11,6 +11,10 @@
 
   - [Real Python Tutorial Categories](https://realpython.com/tutorials/all/)
     * [Intermediate Python Tutorials](https://realpython.com/tutorials/intermediate/)
+      - [Look Ma, No For-Loops: Array Programming With NumPy](https://realpython.com/numpy-array-programming/) by Brad Solomon
+      - [Python Pandas: Tricks & Features You May Not Know](https://realpython.com/python-pandas-tricks/) by Brad Solomon
+      - [Primer on Python Decorators](https://realpython.com/primer-on-python-decorators/) by Geir Arne Hjelle
+      - [The Ultimate Guide to Data Classes in Python 3.7](https://realpython.com/python-data-classes/) by Geir Arne Hjelle
     * [Advanced Python Tutorials](https://realpython.com/tutorials/advanced/)
     * [Python Data Science](https://realpython.com/tutorials/data-science/)
     
