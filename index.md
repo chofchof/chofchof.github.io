@@ -9,6 +9,8 @@ title: ChoF's Archive
 
 # Development Notes
 
+- [Python](/devel/python)
+
 - [JupyterLab](/devel/jupyterlab)
 
 - [Stack Overflow](/devel/stack_overflow)
