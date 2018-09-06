@@ -1,0 +1,23 @@
+name: devel
+dependencies:
+  - python=3.7
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - cython
+  - gmp
+  - ipykernel
+  - ipywidgets
+  - jupyterlab
+  - nodejs
+  - networkx
+  - protobuf
+# linux only
+#  - patchelf
+  - pip:
+    - jupyterlab-latex
+    - ortools
+# export SCIPOPTDIR=/opt/scip
+#    - PySCIPOpt
