@@ -1,5 +1,14 @@
 # Python
 
+## Conda
+
+  - [Miniconda installer archive](https://repo.continuum.io/miniconda/)
+  - [Creating an environment from an `environment.yml` file](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
+    * Sample [`devel.yml`](devel.yml)
+    ```bash
+    conda env create -f devel.yml
+    ```
+
 ## Articles
 
   - [Generator Tricks for Systems Programmers](http://www.dabeaz.com/generators/) by David M. Beazley, 2008.
