@@ -12311,7 +12311,7 @@ and check for convergence of either the parameters or the log likelihood. If the
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Figure 9.8</strong> Illustration of the EM algorithm using the Old Faithful set as used for the illustration of the $K$-means
+<p><strong>Figure 9.8</strong> Illustration of the EM algorithm using the Old Faithful set (<a href="data/Old_Faithful.csv">download</a>) as used for the illustration of the $K$-means
 algorithm in Figure 9.1.</p>
 <ul>
 <li><strong>Plot (a)</strong> shows the <strong>data points in green</strong>, together with the initial configuration of the mixture model in which the <strong>one standard-deviation contours</strong> ($c=\frac{\exp(-1/2)}{2\pi|\Sigma|^{1/2}}$) for the two Gaussian components are shown as <strong>blue and red circles</strong>.<blockquote><p><strong>NOTE:</strong> $\N(\bx|\bmu_k,\bSigma_k)$ has density $\frac{1}{\sqrt{(2\pi)^D|\bSigma_k|}}\exp\bigl\{-\frac{1}{2}(\bx-\bmu_k)^T\bSigma_k^{-1}(\bx-\bmu_k)\bigr\}$. Here the one standard-deviation contours means the set of points $\bx$ such that the <strong>Mahalanobis distance</strong> $\sqrt{(\bx-\bmu_k)^T\bSigma_k^{-1}(\bx-\bmu_k)}=1$. In case when $D=1$, the Mahalanobis distance reduces to the <strong>absolute value of the standard score</strong> $\frac{|x-\mu_k|}{\sigma}=1$.</p>
