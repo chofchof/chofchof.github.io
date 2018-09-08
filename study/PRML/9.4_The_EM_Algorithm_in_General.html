@@ -11771,9 +11771,9 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <details>
-<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>LaTeX new commands defined for this notebook:
@@ -11798,37 +11798,40 @@ $</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="9.4-The-EM-Algorithm-in-General">9.4 The EM Algorithm in General<a class="anchor-link" href="#9.4-The-EM-Algorithm-in-General">&#182;</a></h1><ul>
-<li><p>(Dempster et al., 1977; McLachlan and Krishnan, 1997) <strong>EM (expectation maximization)</strong> 알고리즘은 잠재변수를 가지는 확률모델에서 최대우도추정값을 구하는 일반적인 방법이다.</p>
+<li><p>(Dempster et al., 1977; McLachlan and Krishnan, 1997) <strong>EM (expectation maximization)</strong> 알고리즘은 잠재변수를 가지는 확률모델에서 모수를 최대우도추정하는 일반적인 방법이다.</p>
 </li>
-<li><p>확률모델의 관측데이터를 $\bX$, 그리고 잠재변수를 $\bZ$라 할 때, 우도함수 $p(\bX|\btheta)$에 비해 완전데이터의 우도함수 $p(\bX,\bZ|\btheta)$를 다루는 것이 비교적 쉽다고 가정하자. 이 경우 우도함수
+<li><p>확률모델의 관측데이터를 $\bX$, 그리고 잠재변수를 $\bZ$라 할 때, (가우시안 혼합모델에서와 같이) 불완전데이터의 우도함수 $p(\bX|\btheta)$에 비해 완전데이터의 우도함수 $p(\bX,\bZ|\btheta)$를 다루는 것이 비교적 쉽다고 가정하자. 이 경우 주변화(marginalization)로 표현되는 우도함수
 $$
 p(\bX|\btheta) = \sum_{\bZ} p(\bX,\bZ|\btheta) \tag{9.69}
 $$
-가 최대가 되는 모수 $\btheta$를 찾고자 하지만, 우도함수가 계산하기 좋은 형태의 식으로 나타나지 않거나 잠재변수 $\bZ$의 구성공간(configuration space)이 너무 방대해서 계산이 어려워진다.</p>
+가 최대가 되는 모수 $\btheta$를 찾고자 하지만, 보통 우도함수가 계산하기 좋은 형태의 식으로 나타나지 않거나 잠재변수 $\bZ$의 구성공간(configuration space)이 너무 방대해서 계산이 어려워진다.</p>
 </li>
-<li><p>잠재변수 $\bZ$에 대한 임의의 확률분포 $q(\bZ)$에 대해, 다음과 같이 정의하자.
+<li><p>잠재변수 $\bZ$에 대한 임의의 확률분포 $q(\bZ)$에 대해, 하계 $\L(q,\btheta)$와 <strong>쿨백-라이블러 발산(Kullback-Leibler divergence)</strong> $\KL(q\|p)$을 다음과 같이 정의하면
 \begin{align*}
 \L(q,\btheta) &amp;\equiv \E_\bZ \Bigl[ \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{q(\bZ)} \Bigr\} \Bigr] = \sum_\bZ q(\bZ) \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{q(\bZ)} \Bigr\} \tag{9.71} \\
 \KL(q\|p) &amp;\equiv - \E_\bZ \Bigl[ \ln \Bigl\{ \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} \Bigr\} \Bigr] = - \sum_\bZ q(\bZ) \ln \Bigl\{ \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} \Bigr\} \tag{9.72}
-\end{align*}</p>
-</li>
-<li><p>베이즈 법칙에 의해 $p(\bZ|\bX,\btheta)p(\bX|\btheta)=p(\bX,\bZ|\btheta)$이고 $\sum_\bZ q(\bZ)=1$이므로, (9.69)의 로그우도함수는 아래와 같다.
-\begin{align*}
-\ln p(\bX|\btheta) &amp;= \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{p(\bZ|\bX,\btheta)} \Bigr\}
-= \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{q(\bZ)} \cdot \frac{q(\bZ)}{p(\bZ|\bX,\btheta)} \Bigr\} \\
-&amp;= \sum_\bZ q(\bZ) \cdot \left[ \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{q(\bZ)} \Bigr\} - \ln \Bigl\{ \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} \Bigr\} \right] \\
-&amp;= \sum_\bZ q(\bZ) \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{q(\bZ)} \Bigr\} - \sum_\bZ q(\bZ) \ln \Bigl\{ \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} \Bigr\} \\
-&amp;= \L(q,\btheta) + \KL(q\|p) \geq \L(q,\btheta) \tag{9.70}
-\end{align*}</p>
+\end{align*}
+(9.69)의 로그우도함수는
+$$
+\ln p(\bX|\btheta) = \L(q,\btheta) + \KL(q\|p) \geq \L(q,\btheta) \tag{9.70}
+$$</p>
 <blockquote><p><strong>Note:</strong> <a href="https://en.wikipedia.org/wiki/Jensen%27s_inequality">젠센 부등식</a>(Jensen's inequality)에 따르면
 \begin{align*}
 \KL(q\|p) &amp;= - \E_\bZ \Bigl[ \ln \Bigl\{ \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} \Bigr\} \Bigr] \\
 &amp;\geq - \ln \E_\bZ \Bigl[ \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} \Bigr] = - \ln \sum_\bZ q(\bZ) \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} = -\ln \sum_\bZ p(\bZ|\bX,\btheta) = 0
 \end{align*}</p>
 </blockquote>
-<p>특히 $q(\bZ)=p(\bZ|\bX,\btheta)$인 경우 <strong>쿨백-라이블러 발산(Kullback-Leibler divergence)</strong> $\KL(q\|p)=0$ 이고,
-따라서 $\ln p(\bX|\btheta) = \L(q,\btheta)$.</p>
+<p>특히 $q(\bZ)=p(\bZ|\bX,\btheta)$인 경우 $\KL(q\|p)=0$ 이고, 따라서 $\ln p(\bX|\btheta) = \L(q,\btheta)$.</p>
 <p><img src="images/Figure9.11.png" alt="Figure 9.11" width="600"/></p>
+<blockquote><p><strong>Proof.</strong> 베이즈 법칙에 의해 $p(\bZ|\bX,\btheta)p(\bX|\btheta)=p(\bX,\bZ|\btheta)$이고 $\sum_\bZ q(\bZ)=1$이므로
+\begin{align*}
+\ln p(\bX|\btheta) &amp;= \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{p(\bZ|\bX,\btheta)} \Bigr\}
+= \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{q(\bZ)} \cdot \frac{q(\bZ)}{p(\bZ|\bX,\btheta)} \Bigr\} \\
+&amp;= \sum_\bZ q(\bZ) \cdot \left[ \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{q(\bZ)} \Bigr\} - \ln \Bigl\{ \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} \Bigr\} \right] \\
+&amp;= \sum_\bZ q(\bZ) \ln \Bigl\{ \frac{p(\bX,\bZ|\btheta)}{q(\bZ)} \Bigr\} - \sum_\bZ q(\bZ) \ln \Bigl\{ \frac{p(\bZ|\bX,\btheta)}{q(\bZ)} \Bigr\} \\
+&amp;= \L(q,\btheta) + \KL(q\|p)
+\end{align*}</p>
+</blockquote>
 </li>
 <li><p>결국 로그우도함수 $\ln p(\bX|\btheta)=\L(q,\btheta) + \KL(q\|p)$가 최대가 되는 확률분포 $q(\bZ)$와 모수 $\btheta$를 함께 찾아야 한다. 그런데 임의의 $q(\bZ)$와 $\btheta$에 대해 $\ln p(\bX|\btheta)\geq \L(q,\btheta)$이므로, <strong>EM 알고리즘의 일반화는 로그우도함수의 하계 $\L(q,\btheta)$가 최대가 되는 $q(\bZ)$와 $\btheta$를 찾으려 한다</strong>.</p>
 </li>
@@ -11896,7 +11899,7 @@ and return to Step 2.</p>
 &amp;\equiv \Q(\btheta,\btheta^{old}) + \text{const} \tag{9.74}
 \end{align*}</p>
 </li>
-<li><p>로그우도함수의 하계 $\L(q,\btheta^{new})$가 증가함에 따라 로그우도함수 $p(\bX|\btheta^{new})$ 자체도 증가하지만, 모수가 변하기 때문에 ($\btheta^{new}\neq\btheta^{old}$) 더 이상 $\KL(q\|p)=\KL(p(\bZ|\bX,\btheta^{old})\|p(\bZ|\bX,\btheta^{new}))=0$일 보장은 없다. (그림 9.13 참조)</p>
+<li><p>하계 $\L(q,\btheta^{new})$가 증가함에 따라 로그우도함수 $p(\bX|\btheta^{new})$ 자체도 증가하지만, 모수가 변하기 때문에 ($\btheta^{new}\neq\btheta^{old}$) 더 이상 $\KL(q\|p)=\KL(p(\bZ|\bX,\btheta^{old})\|p(\bZ|\bX,\btheta^{new}))=0$일 보장은 없다. (그림 9.13 참조)</p>
 <p><img src="images/Figure9.13.png" alt="Figure 9.13" width="600"/></p>
 </li>
 <li><p>새로운 모수를 구하는 식 (9.33)은 기댓값이므로 총합이 로그 안에 있지 않다는 점에 주목하자.
@@ -11923,12 +11926,11 @@ $$
 \end{align*}
 so that
 $$
-\ln p(\bX|\btheta^{new}) \geq \L(q,\btheta^{new}) \geq \L(q,\btheta^{old}) = \ln p(\bX|\btheta^{old})
+\ln p(\bX|\btheta^{new}) \geq \L(q,\btheta^{new}) \geq \L(q,\btheta^{old}) + \KL(q\|q) = \ln p(\bX|\btheta^{old})
 $$</p>
 </blockquote>
 </li>
-<li><p>One reasonable convergence test would be to check if the increase in
-$\ln p(\bX|\btheta)$ between successive iterations is smaller than some tolerance parameter, and to declare convergence if EM is improving $\ln p(\bX|\btheta)$ too slowly.</p>
+<li><p>EM 알고리즘의 일반화에서 마지막 단계는 로그우도함수 및 모수의 수렴 테스트이다. 로그우도함수는 항상 증가하므로 증가량이 주어진 공차(tolerance)보다 작아지거나 너무 천천히 증가하면 수렴한다고 볼 수 있다. 하지만 로그우도함수의 수렴값은 극댓값이지 최대가 아닐 수 있다는 점에 유의하자.</p>
 </li>
 </ul>
 
@@ -11940,10 +11942,17 @@ $\ln p(\bX|\btheta)$ between successive iterations is smaller than some toleranc
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="The-operation-of-the-EM-algorithm-in-the-space-of-parameters">The operation of the EM algorithm in the space of parameters<a class="anchor-link" href="#The-operation-of-the-EM-algorithm-in-the-space-of-parameters">&#182;</a></h3><ul>
-<li><p>The operation of the EM algorithm can also be viewed in the space of parameters, as illustrated schematically in Figure 9.14. Here the red curve depicts the (incomplete data) log likelihood function whose value we wish to maximize.</p>
+<li><p>그림 9.14는 EM 알고리즘이 어떻게 작동하는지 $x$축을 모수 $\theta$로, 그리고 $y$축을 로그우도로 표현한 것이다. <strong>빨간색 그래프</strong>로 표시된 (불완전데이터의) 로그우도함수 $\ln p(\bX|\theta)$가 최대가 되는 모수를 찾는 것이 EM 알고리즘의 목적이다.</p>
 <p><img src="images/Figure9.14.png" alt="Figure 9.14" width="600"/></p>
 </li>
-<li><p>We start with some initial parameter value $\btheta^{old}$, and in the first E step we evaluate the posterior distribution over latent variables, which gives rise to a lower bound $\L(\btheta,\btheta^{old})$ whose value equals the log likelihood at $\btheta^{old}$, as shown by the blue curve. Note that the bound makes a tangential contact with the log likelihood at $\btheta^{old}$, so that both curves have the same gradient. This bound is a convex function having a unique maximum (for mixture components from the exponential family). In the M step, the bound is maximized giving the value $\btheta^{new}$, which gives a larger value of log likelihood than $\btheta^{old}$. The subsequent E step then constructs a bound that is tangential at $\btheta^{new}$ as shown by the green curve.</p>
+<li><p>초기 모숫값 $\theta^{old}$에서 시작해보자. 먼저 (<strong>E step</strong>)에서 잠재변수에 대한 사후확률분포 $q(\bZ)=p(\bZ|\bX,\theta^{old})$를 구하게 된다. 그림에서 <strong>파란색 그래프</strong>는 이렇게 구한 $q$를 하계 $\L(q,\theta)$에 적용한 후 모수 $\theta$에 대한 함수로 표현한 것이다.  모숫값 $\btheta^{old}$에서 하계는 로그우도함수와 같아지고, 특히 이 점에서 하계와 로그우도함수의 그래프는 같은 접선을 가진다.</p>
+<blockquote><p><strong>Note:</strong> 모숫값 $\theta^{old}$에서 $\KL(q\|p)$는 최소가 되므로 이 점에서 $\frac{\partial}{\partial\theta} \KL(q\|p)=0$이다. 따라서
+$$
+\frac{\partial}{\partial\theta}\Big|_{\theta=\theta^{old}} \ln p(\bX|\theta) = \frac{\partial}{\partial\theta}\Big|_{\theta=\theta^{old}} \bigl[ \L(q,\theta) + \KL(q\|p) \bigr] = \frac{\partial}{\partial\theta}\Big|_{\theta=\theta^{old}} \L(q,\theta)
+$$</p>
+</blockquote>
+</li>
+<li><p>(<strong>M step</strong>)에서 하계 $\L(q,\theta)$이 최대가 되는 모수 $\theta^{new}$를 찾는데, 이 점에서 파란색 그래프는 최대가 된다. 이어지는 (<strong>E step</strong>)에서 새로운 사후확률분포 $q'(\bZ)=p(\bZ|\bX,\theta^{new})$를 구하고 이를 적용한 하계 $\L(q',\theta)$ (<strong>녹색 그래프</strong>)는 $\theta^{new}$에서 다시 로그우도함수와 같은 접선을 가진다.</p>
 </li>
 </ul>
 
