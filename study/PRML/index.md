@@ -7,5 +7,6 @@
 
 # Resources
 
+  - My [PRML Study GitHub](https://github.com/chofchof/chofchof.github.io/tree/master/study/PRML) containing data and figures
   - Christopher Bishop's [PRML Book](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book) containing solution manual, errata, and figures
   - [Reading Group: Pattern Recognition and Machine Learning](https://lear.inrialpes.fr/~jegou/bishopreadinggroup/) (2007-2008) at [INRIA](https://www.inria.fr/centre/grenoble)
