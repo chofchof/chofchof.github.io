@@ -22,7 +22,5 @@
 
 ## Tutorials
 
-  - SciPy 2018 Mayavi Tutorial (3 hrs):
-    * [Video](https://www.youtube.com/watch?v=r6OD07Qq2mw)
-    * [Resources](https://github.com/prabhuramachandran/mayavi-tutorial)
-    
+  - [Mayavi: 3D scientific data visualization and plotting in Python](https://docs.enthought.com/mayavi/mayavi/)
+  - [SciPy 2018 Mayavi Tutorial](https://github.com/prabhuramachandran/mayavi-tutorial)
