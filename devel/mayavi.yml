@@ -1,0 +1,14 @@
+name: mayavi
+dependencies:
+  - python=3
+  - qtconsole
+  - vtk
+  - apptools
+  - configobj
+  - envisage
+  - numpy
+  - pyface
+  - traits
+  - traitsui
+  - pip:
+    - mayavi
