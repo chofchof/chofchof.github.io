@@ -5,7 +5,7 @@ dependencies:
   - vtk
   - cython
   - apptools
-  - configobj
+  - pygments
   - envisage
   - numpy
   - pyface
