@@ -3,6 +3,7 @@ dependencies:
   - python=3
   - qtconsole
   - vtk
+  - cython
   - apptools
   - configobj
   - envisage
