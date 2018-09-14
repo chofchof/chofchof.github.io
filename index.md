@@ -13,6 +13,8 @@ title: ChoF's Archive
 
 - [JupyterLab](/devel/jupyterlab)
 
+- [Mayavi](/devel/mayavi): 3D scientific data visualization and plotting in Python
+
 - [Stack Overflow](/devel/stack_overflow)
   * [numpy](/devel/stack_overflow#numpy)
   * [matplotlib](/devel/stack_overflow#matplotlib)
