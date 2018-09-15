@@ -21,6 +21,7 @@
   - (Optional) Install Jupyter Notebook Extension
     ```bash
     conda activate mayavi
+    conda install notebook
     jupyter nbextension install mayavi --user --py
     jupyter nbextension enable mayavi --user --py
     ```
