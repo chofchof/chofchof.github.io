@@ -8,15 +8,30 @@
     ```bash
     conda env create -f mayavi.yml
     ```
-  - Run Jupyter Qt Console under my `mayavi` environment
+  - Run Jupyter Qt Console under `mayavi` environment
     ```bash
     conda activate mayavi && jupyter-qtconsole
     ```
-
-  - Test your installation
+    and test your installation
     ```python
     %gui qt
     from mayavi import mlab
+    mlab.test_plot3d()
+    ```
+  - (Optional) Install Jupyter Notebook Extension
+    ```bash
+    conda activate mayavi
+    jupyter nbextension install mayavi --user --py
+    jupyter nbextension enable mayavi --user --py
+    ```
+    and run Jupyter Notebook under `mayavi` environment
+    ```bash
+    conda activate mayavi && jupyter-notebook
+    ```
+    and then test your installation
+    ```python
+    from mayavi import mlab
+    mlab.init_notebook()
     mlab.test_plot3d()
     ```
 
