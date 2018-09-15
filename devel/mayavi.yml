@@ -2,7 +2,7 @@ name: mayavi
 dependencies:
   - python=3
   - qtconsole
-  - vtk
+  - notebook
   - cython
   - apptools
   - pygments
@@ -12,4 +12,5 @@ dependencies:
   - traits
   - traitsui
   - pip:
+    - vtk
     - mayavi
