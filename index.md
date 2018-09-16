@@ -30,6 +30,6 @@ title: ChoF's Archive
 
 2. [Seminar Notes](study/PRML/) for [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book) by Christopher Bishop
 
-# Links Recommended
+# Recommended Links
 
 1. [SciPy 2018 Conference](https://scipy2018.scipy.org): The 17th annual Scientific Computing with Python conference on July 9-15, 2018 in Austin, Texas.
