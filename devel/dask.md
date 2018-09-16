@@ -4,7 +4,7 @@
 
   - [Miniconda installer archive](https://repo.continuum.io/miniconda/)
     ```bash
-    conda install dask
+    conda install dask python-graphviz
     ```
 
 ## Tutorials
