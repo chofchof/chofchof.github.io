@@ -4,7 +4,7 @@
 
   - [Miniconda installer archive](https://repo.continuum.io/miniconda/)
   - [Creating an environment from an `environment.yml` file](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
-    * Sample [`devel.yml`](devel.yml)
+    * Download a sample [`environment.yml`](devel.yml)
     ```bash
     conda env create -f devel.yml
     ```
@@ -47,4 +47,4 @@
       - [The Ultimate Guide to Data Classes in Python 3.7](https://realpython.com/python-data-classes/) by Geir Arne Hjelle
     * [Advanced Python Tutorials](https://realpython.com/tutorials/advanced/)
     * [Python Data Science](https://realpython.com/tutorials/data-science/)
-    
+  
