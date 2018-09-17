@@ -7,10 +7,6 @@
     conda install dask python-graphviz
     ```
 
-## Articles
-
-  - [Why every Data Scientist should use Dask?](https://towardsdatascience.com/why-every-data-scientist-should-use-dask-81b2b850e15b) by Aneesha Bakharia
-  
 ## Tutorials
 
   - [SciPy 2018](https://scipy2018.scipy.org) Tutorial: Parallelizing Scientific Python with Dask
