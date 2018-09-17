@@ -48,3 +48,6 @@
     * [Advanced Python Tutorials](https://realpython.com/tutorials/advanced/)
     * [Python Data Science](https://realpython.com/tutorials/data-science/)
   
+## Recommended Links
+
+  - [SciPy Cookbook](https://scipy-cookbook.readthedocs.io)
