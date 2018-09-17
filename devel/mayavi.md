@@ -4,7 +4,7 @@
 
   - [Miniconda installer archive](https://repo.continuum.io/miniconda/)
   - [Creating an environment from an `environment.yml` file](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
-    * Sample [`mayavi.yml`](mayavi.yml)
+    * Download a sample [`environment.yml`](mayavi.yml)
     ```bash
     conda env create -f mayavi.yml
     ```
@@ -38,5 +38,8 @@
 
 ## Tutorials
 
-  - [Mayavi: 3D scientific data visualization and plotting in Python](https://docs.enthought.com/mayavi/mayavi/)
   - [SciPy 2018 Mayavi Tutorial](https://github.com/prabhuramachandran/mayavi-tutorial)
+
+## Links
+
+  - [Mayavi: 3D scientific data visualization and plotting in Python](https://docs.enthought.com/mayavi/mayavi/)
