@@ -10,21 +10,16 @@
     ```
   - Run JupyterLab under my `devel` environment
     ```bash
-    conda activate devel && jupyter-notebook --no-browser --port=8888 --log-level=0 > jupyter-server.log 2>&1
+    conda activate devel && jupyter-notebook --no-browser --port=8888 --log-level=0 --NotebookApp.base_url=jupyter > jupyter-server.log 2>&1
     ```
   - Proxy configuration of [nginx](https://nginx.org) for local JupyterLab
     ```nginx
-    location ~* /(api/kernels/[^/]+/(channels|iopub|shell|stdin)|terminals/websocket)/? {
-        proxy_pass http://localhost:8888;
+    location /jupyter {
+        proxy_pass http://localhost:8888/jupyter;
 
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        # WebSocket support
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-        proxy_read_timeout 86400;
     }
 
     client_max_body_size 10M;    
