@@ -8,9 +8,9 @@
     ```bash
     conda env create -f mayavi.yml
     ```
-  - Run Jupyter Qt Console under `mayavi` environment
+  - Run IPython under `mayavi` environment
     ```bash
-    conda activate mayavi && jupyter-qtconsole
+    conda activate mayavi && ipython
     ```
     and test your installation
     ```python
