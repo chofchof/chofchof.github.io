@@ -1,7 +1,6 @@
 name: mayavi
 dependencies:
   - python=3.6
-  - qtconsole
   - cython
   - apptools
   - pygments
@@ -11,5 +10,6 @@ dependencies:
   - traits
   - traitsui
   - pip:
+    - PyQt5
     - vtk
     - mayavi
