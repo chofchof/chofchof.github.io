@@ -10,11 +10,10 @@
     ```
   - Run IPython under `mayavi` environment
     ```bash
-    conda activate mayavi && ipython
+    conda activate mayavi && ipython --gui=qt
     ```
     and test your installation
     ```python
-    %gui qt
     from mayavi import mlab
     mlab.test_plot3d()
     ```
