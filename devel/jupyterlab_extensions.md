@@ -37,14 +37,24 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager
     * [ipywidgets Examples](https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/examples/Index.ipynb)
     * [jupyterlab-manager](https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager)
 
-## JupyterLab LaTeX
+## ipywidgets
 
 ```bash
-pip install jupyterlab-latex
-jupyter labextension install @jupyterlab/latex
+conda install ipywidgets
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
-  - An extension for JupyterLab which allows for live-editing of LaTeX documents.
+## ipympl
+
+```bash
+pip install ipympl
+jupyter labextension install jupyter-matplotlib
+```
+
+  - Matplotlib Jupyter Extension. To enable the jupyter-matplotlib backend, simply use the matplotlib Jupyter magic:
+```python
+%matplotlib widget
+```
   
   - Links
-    * [jupyterlab-latex](https://github.com/jupyterlab/jupyterlab-latex)
+    * [jupyter-matplotlib](https://github.com/matplotlib/jupyter-matplotlib)
