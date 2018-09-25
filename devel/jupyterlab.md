@@ -9,6 +9,7 @@ conda install jupyterlab nodejs
   - [List of JupyterLab Extensions](https://github.com/topics/jupyterlab-extension)
   - [ipywidgets](jupyterlab_extensions#ipywidgets)
   - [JupyterLab LaTeX](jupyterlab_extensions#jupyterlab-latex)
+  - [ipympl](jupyterlab_extensions#ipympl)
   
 ## Issues
 
