@@ -37,12 +37,17 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager
     * [ipywidgets Examples](https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/examples/Index.ipynb)
     * [jupyterlab-manager](https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager)
 
-## ipywidgets
+## JupyterLab LaTeX
 
 ```bash
-conda install ipywidgets
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
+pip install jupyterlab-latex
+jupyter labextension install @jupyterlab/latex
 ```
+
+  - An extension for JupyterLab which allows for live-editing of LaTeX documents.
+  
+  - Links
+    * [jupyterlab-latex](https://github.com/jupyterlab/jupyterlab-latex)
 
 ## ipympl
 
