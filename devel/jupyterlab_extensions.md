@@ -60,10 +60,7 @@ jupyter labextension install jupyter-matplotlib
 ```python
 %matplotlib widget
 # or %matplotlib ipympl
-```
 
-  - Usage
-```python
 import matplotlib as mpl
 print(mpl.get_backend())
 # returns module://ipympl.backend_nbagg
