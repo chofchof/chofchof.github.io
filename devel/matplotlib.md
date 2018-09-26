@@ -12,12 +12,12 @@
     ```
 
 ## Jupyter notebook and Jupyterlab
-  - Interactive mode: Not need `plt.show()`
+  - Interactive mode: No need `plt.show()`
     ```python
     %matplotlib inline
     import matplotlib.pyplot as plt
     ```
-  - Non-interactive mode: Needs `plt.show()` and installation [ipympl](/devel/jupyterlab_extensions#ipympl)
+  - Non-interactive mode: Need `plt.show()` and [ipympl](/devel/jupyterlab_extensions#ipympl)
     ```python
     %matplotlib widget
     import matplotlib.pyplot as plt
