@@ -9,27 +9,28 @@ title: ChoF's Archive
 
 # Development Notes
 
-- [Python](/devel/python)
+- Environments
+  * [Python](/devel/python)
+  * [JupyterLab](/devel/jupyterlab)
 
-- [JupyterLab](/devel/jupyterlab)
+- Parallelization
+  * [Dask](/devel/dask): Scalable analytics in Python
 
-- [Dask](/devel/dask): Scalable analytics in Python
+- Visualization
+  * [Matplotlib](/devel/matplotlib): Python 2D plotting library
+  * [Mayavi](/devel/mayavi): 3D scientific data visualization and plotting in Python
 
-- [Mayavi](/devel/mayavi): 3D scientific data visualization and plotting in Python
-
-- [Stack Overflow](/devel/stack_overflow)
-  * [numpy](/devel/stack_overflow#numpy)
-  * [matplotlib](/devel/stack_overflow#matplotlib)
-
-- [Stack Exchange](/devel/stack_exchange)
-  * [Unix & Linux Stack Exchange](/devel/stack_exchange#unix--linux-stack-exchange)
+- Q & A
+  * [Stack Overflow](/devel/stack_overflow)
+  * [Stack Exchange](/devel/stack_exchange)
+    - [Unix & Linux Stack Exchange](/devel/stack_exchange#unix--linux-stack-exchange)
   
 # Self Studies
 
-1. [Seminar Notes](https://github.com/chofchof/reinforcement-learning-an-introduction) for [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) by Sutton and Barto
+1. [Seminar Notes](study/PRML/) for [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book) by Christopher Bishop
 
-2. [Seminar Notes](study/PRML/) for [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book) by Christopher Bishop
+2. [Seminar Notes](https://github.com/chofchof/reinforcement-learning-an-introduction) for [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) by Sutton and Barto
 
 # Recommended Links
 
-1. [SciPy 2018 Conference](https://scipy2018.scipy.org): The 17th annual Scientific Computing with Python conference on July 9-15, 2018 in Austin, Texas.
+- [SciPy 2018 Conference](https://scipy2018.scipy.org): The 17th annual Scientific Computing with Python conference on July 9-15, 2018 in Austin, Texas.
