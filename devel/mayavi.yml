@@ -1,17 +1,25 @@
 name: mayavi
+channels:
+  - defaults
 dependencies:
   - python=3.6
-  - ipython
-  - sip
-  - cython
   - apptools
-  - pygments
+  - cycler
+  - cython
   - envisage
+  - ipykernel
+  - ipython
+  - jupyter_console
+  - kiwisolver
   - numpy
   - pyface
+  - pygments
+  - pyparsing
+  - sip
   - traits
   - traitsui
   - pip:
-    - PyQt5
-    - vtk
-    - mayavi
+    - matplotlib>=3.0.0
+    - mayavi>=4.6.2
+    - PyQt5>=5.11.2
+    - vtk>=0.1.7
