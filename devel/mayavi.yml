@@ -11,6 +11,7 @@ dependencies:
   - ipython
   - jupyter_console
   - kiwisolver
+  - notebook
   - numpy
   - pyface
   - pygments
@@ -19,6 +20,7 @@ dependencies:
   - traits
   - traitsui
   - pip:
+    - ipympl>=0.2.1
     - matplotlib>=3.0.0
     - mayavi>=4.6.2
     - PyQt5>=5.11.2
