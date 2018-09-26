@@ -56,18 +56,25 @@ pip install ipympl
 jupyter labextension install jupyter-matplotlib
 ```
 
-  - Matplotlib Jupyter Extension. To enable the jupyter-matplotlib backend, simply use the matplotlib Jupyter magic:
+  - Matplotlib Jupyter Extension. To enable the jupyter-matplotlib backend, simply use:
 ```python
 %matplotlib widget
 # or %matplotlib ipympl
+```
 
+  - Usage
+```python
 import matplotlib as mpl
 print(mpl.get_backend())
 # returns module://ipympl.backend_nbagg
 
 import matplotlib.pyplot as plt
+#plt.ion() # turn on interactive mode (default)
 plt.ioff() # turn off interactive mode
+
+fig, ax = plt.subplots(figsize=plt.figaspect(1))
+fig, axes = plt.subplots(ncols=2, figsize=plt.figaspect(0.5) * 0.5)
 ```
-  
+
   - Links
     * [jupyter-matplotlib](https://github.com/matplotlib/jupyter-matplotlib)
