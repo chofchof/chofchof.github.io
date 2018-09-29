@@ -27,9 +27,11 @@ title: ChoF's Archive
   
 # Self Studies
 
-1. [Seminar Notes](study/PRML/) for [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book) by Christopher Bishop
+1. [Seminar Notes](study/MLAPP/) for [Machine Learning: a Probabilistic Perspective](https://www.amazon.com/dp/0262018020) by Kevin P. Murphy
 
-2. [Seminar Notes](study/RL/) for [Reinforcement Learning: An Introduction, 2nd edition](https://www.amazon.com/gp/product/0262193981) by Sutton and Barto
+2. [Seminar Notes](study/PRML/) for [Pattern Recognition and Machine Learning](https://www.amazon.com/dp/0387310738) by Christopher M. Bishop
+
+3. [Seminar Notes](study/RL/) for [Reinforcement Learning: An Introduction, 2nd edition](https://www.amazon.com/dp/0262193981) by Richard S. Sutton and Andrew G. Barto
 
 # Recommended Links
 
