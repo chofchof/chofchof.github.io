@@ -10,7 +10,7 @@
     ```
   - Run JupyterLab under my `devel` environment
     ```bash
-    conda activate devel && jupyter-notebook --no-browser --port=8888 --log-level=0 --NotebookApp.base_url=jupyter > jupyter-server.log 2>&1
+    conda activate devel && jupyter-notebook --no-browser --port=8888 --log-level=0 --NotebookApp.base_url=jupyter --NotebookApp.allow_remote_access=True > jupyter-server.log 2>&1
     ```
   - Proxy configuration of [nginx](https://nginx.org) for local JupyterLab
     ```nginx
