@@ -10,7 +10,7 @@ My current position is
 
 **Moderator** at [ICIM (Innovation Center for Industrial Mathematics)](https://www.icim.or.kr), since March 2018
 - **Principal Researcher** at [NIMS (National Institute for Mathematical Sciences)](https://www.nims.re.kr), since September 2014
-- **Executive Board Member** of [KMS (Korean Mathematical Society)](http://www.kms.or.kr), since January 2017
+- **Vice President** of [KMS (Korean Mathematical Society)](http://www.kms.or.kr), since January 2023
 
 and formerly,
 
@@ -23,8 +23,8 @@ I received a Ph.D. degree (Mathematics) in 1999 at [KAIST (Korea Advanced Instit
 
 My interests are as follows.
 
+- PyTorch, TensorFlow, Google OR-Tools << Data Science << Mathematics for Industry
 - Topological Data Analysis, Transformation Groups << Algebraic Topology << Mathematics
-- TensorFlow, Google OR-Tools << Data Science << Mathematics for Industry
 - XeTeX, dvipdfmx << TeX Typesetting System << Digital Typography
 - Python, C, Mathematica << Programming Languages
 
@@ -43,5 +43,4 @@ I'm working on **Mathematics for Industry** at ICIM.
 
 I have the following qualities:
 
-- I love [Jekyll](https://jekyllrb.com) and [Jupyter](http://jupyter.org) so much in these days.
 - I'm extremely loyal to my wife, SONG.
